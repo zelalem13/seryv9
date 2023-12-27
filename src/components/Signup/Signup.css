@@ -1,174 +1,202 @@
  
 .teret{
-   display: flex;
-   //justify-content: center;
-   align-items: center;
-   flex-direction: column;
-    //position: absolute; 
- }
- .tedr{
+   
+  display: flex;
+  //justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   //position: absolute; 
+}
+.tedr{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
      
-     display: flex;
-     //justify-content: center;
-     align-items: center;
-     flex-direction: column;
-      
-     //position: absolute;
-      
+    //position: absolute;
      
-   }
-   .tedr h1{
-     color: #000;
-   }
     
-   .subtitle {
-     color: rgb(218, 218, 218);
-     text-align: center;
-     margin-bottom: 3rem;
-   }
-   
-   .inputs_container {
-     display: flex;
-     flex-direction: column;
-     background: none;
-     //border-radius: 25px;
-     border: none;
-   }
-   .inputs_containerA{
-     display: flex;
-     flex-direction: column;
-     background: none;
-     //border-radius: 25px;
-     border: none; 
+  }
+  .tedr form{
+    width: 400px;
       
-   }
-   .inputs_container1{
-     display: flex;
-     flex-direction: column;
-     background: none;
-     //border-radius: 25px;
-     border: none; 
-     
-   }
-   .inputs_container img{
-     width: 10%;
-     border: none;
-     background: #eaeaea; 
-   }
-   .inputs_container input{
-     //width: 90%;
-     margin: 0.5rem auto;
-     padding: 1rem;
-      
-     font-size: 1rem;
-     font-family: inherit;
-     outline: 0;
-     background: #eaeaea;
-     border: none;
-   }
-   .login_button {
-     display: block;
-     margin: 3rem auto 1rem auto;
-     width: 80%;
-     padding: 0.75rem 1rem;
-     border-radius: 25px;
-     outline: 0;
-     font-size: 1rem;
-     font-family: inherit;
-     cursor: pointer;
-     background-color: #4e65f7;
-     color: white;
-     border: 2px solid transparent;
-   }
+  }
+  .tedr h1{
+    color: #000;
+  }
    
-   .rememberme_button{
-     display: flex;
-     color: white;
-      
-   }
-   .login_button:hover {
-     border: 2px solid #4e65f7;
-     background-color: #000;
-   }
+  .subtitle {
+    color: rgb(218, 218, 218);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .inputs_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    //border-radius: 25px;
+    border: none;
+  }
+
+  .emaili{
    
-   .link_container {
-     display: flex;
-     margin: 2rem auto 1rem auto;
-     justify-content: center;
-   }
+  height: 25px;
+  width: 35px;
+  position: absolute;
+  padding: 15px 0 0 15px;
+  border: none;
+  outline: none;
+  }
+
+  .fill3{
+    padding-left: 70px;
+  font-size: 20px;
+  }
+
+  
    
-   .small {
-     color: #000;
-      
-     text-align: center;
-     font-size: 1rem;
-     font-family: inherit;
-     
-     text-decoration: underline;
-     margin-bottom: 5rem;
-     cursor: pointer;
-   }
+  .inputs_container input{
+    width: 100%;
+    margin: 0.5rem auto;
+    padding: 0.75rem 1rem;
+    padding-left: 4rem;
+    text-align: left;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: 0;
+    background: #fafafa;
+    border: none;
+  }
+  .login_button {
+    display: block;
+    margin: 2rem auto 1rem auto;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 25px;
+    outline: 0;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: #6f3abb;
+    color: white;
+    border: 2px solid transparent;
+  }
    
-   .ves {
-     display: flex;
-     justify-content: center;
-     gap: 1.5rem;
-   }
-   .test12{
-     display: flex;
-     justify-content: center;
-     margin: 3rem auto 1rem auto;
-     
-     gap: 10rem; 
-   }
+  .login_button:hover {
+    border: 2px solid #4e65f7;
+    background-color: #000;
+  }
+  
+  .link_container {
+    display: flex;
+    //margin: 2rem auto 1rem auto;
+    justify-content: center;
+    flex-direction: column;
+    //color: #6f3abb;
+  }
+  .tedr input {
+    //display: flex;
+    //margin: 2rem auto 1rem auto;
+    //width: 80%;
+    //padding: 0.75rem 1rem;
+    //border-radius: 25px;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    //background-color: #6f3abb;
+    color: #6f3abb;
+    //border: 2px solid transparent;
+  }
+  .small {
+    color: #8c3cff;
+    text-align: center;
+    font-size: 1rem;
+    font-family: inherit;
     
-   .test12 icon {
-      
-   }
+    //text-decoration: underline;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
    
-   .social{
-     display:flex;
-     justify-content:space-around;
-     padding:30px;
-   }
    
-   .social i{
-     font-size:35px;
-   }
    
-   .social i:hover{
-     color:red;
-     cursor:pointer;
-   }
-   
-   .error_msg {
-     color: red;
-     padding-left: 1rem;
-     font-size: 0.85rem;
-     margin: 0;
-   }
-   
-   @media only screen and (max-width: 620px) {
-     .inputs_container input {
-       width: 100%;
-     }
-   
-     .login_button {
-       width: 100%;
-     }
-   
-     .error_msg {
-       padding-left: 0.2rem;
-     }
-   }
-   
-   @media only screen and (max-height: 670px) {
-     .subtitle {
-       margin-bottom: 2rem;
-     }
-   
-     .small {
-       margin-bottom: 3rem;
-     }
-   }
-   
+  .test12{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto 0.5rem auto;
+    
+     
+    gap: 8rem; 
+  }
+
+  .test12 facebookI{
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+     
+  }
+  .fall{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto 0.5rem auto;
+    margin-bottom: 1rem;
+  }
+  .fall1{
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto 0.5rem auto;
+  }
+  .test12 icon {
+     
+  }
+  
+  .social{
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+  }
+  
+  .social i{
+    font-size:35px;
+  }
+  
+  .social i:hover{
+    color:red;
+    cursor:pointer;
+  }
+  
+  .error_msg {
+    color: red;
+    padding-left: 1rem;
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  
+  @media only screen and (max-width: 620px) {
+    .inputs_container input {
+      width: 100%;
+    }
+  
+    .login_button {
+      width: 100%;
+    }
+  
+    .error_msg {
+      padding-left: 0.2rem;
+    }
+  }
+  
+  @media only screen and (max-height: 670px) {
+    .subtitle {
+      margin-bottom: 2rem;
+    }
+  
+    .small {
+      margin-bottom: 3rem;
+    }
+  }
+  

@@ -66,47 +66,56 @@ const Signup = ({setIsSignedUp}) => {
 
 return (
   
-    <div className="teret">
-      <Cards>
-    <div className="tedr"> 
-       <h1 className="title">Create your Account</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="inputs_container">
-           
-            <img src={email_icon} alt="" /> 
-            <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          {renderErrorMsg("email")}
-          {renderErrorMsg("noEmail")}
-            
-            
-          <img src={password_icon} alt="" />
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-          />
-          {renderErrorMsg("password")}
-          {renderErrorMsg("noPassword")}
-         
-          
-        </div>
-        <input type="submit" value="Sign up" className="login_button" />
-      </form>
-        <label>Or continue with:</label>
-        <div id="iconGroup" className="test12">
-        <FacebookIcon style={{ color: '#1266f1' }} />
-        <GoogleIcon style={{ color: '#EA4335' }} />
-        <AppleIcon style={{ color: '#000' }} />
-        </div>
+  <div className="teret">
+  <Cards>
+<div className="tedr" > 
+   <h1 className="title">Logged to your Account</h1>
+    <form onSubmit={handleSubmit}>
+      <div className="inputs_container">
+       
+        <img src={email_icon} alt="" className="emaili" /> 
+        <input
+        type="email"
+        placeholder="Email"
+        value={email}
+        className="fill3"
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      {renderErrorMsg("email")}
+      {renderErrorMsg("noEmail")}
+        
+       <div className="pass2">
+       <img src={password_icon} alt="" className="emaili" />
+      <input
+        type="password"
+        placeholder="Password"
+        value={password}
+        className="fill3"
+        onChange={(e) => setPassword(e.target.value)}
+      />
       </div>
-      </Cards>
-      </div>
+      {renderErrorMsg("password")}
+      {renderErrorMsg("noPassword")}
+     
+      
+    </div>
+     <div className="checkbox-wrapper">
+    <input className="fast1" type="checkbox" name="" id="login-checkbox"/> 
+    <label className="fal" display="flex" justify-content="center" for="login-checkbox">Remember Me</label>
+    </div>
+    <input type="submit" value="Sign up" className="login_button" />
+  </form>
+    <label className="fall">or continue with</label>
+    <div id="iconGroup" className="test12">
+    <FacebookIcon className="facebookI" style={{ color: '#1266f1' }} />
+    <GoogleIcon className="googleI" style={{ color: '#EA4335' }} />
+    <AppleIcon className="appleI" style={{ color: '#000' }} />
+    </div>
+    <label className="fall1">Already have an account?</label>
+    <input className="login_button1" type="submit" value="Sign in" />
+  </div>
+  </Cards>
+  </div>
     
   );
   

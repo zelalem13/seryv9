@@ -77,7 +77,7 @@
 .gpt3__navbar-links_container button{
     padding: 0.5rem 1rem;
     color: #fff;
-    background: #FF4820;
+    background: none;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 18px;
